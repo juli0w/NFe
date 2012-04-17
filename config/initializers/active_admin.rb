@@ -127,3 +127,13 @@ ActiveAdmin.setup do |config|
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
 end
+
+ActiveAdmin::Views::Pages::Base.class_eval do
+  private
+
+  def build_footer
+    div :id => "footer" do
+      para ""
+    end
+  end
+end 

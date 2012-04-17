@@ -7,7 +7,7 @@ gem 'rails', '3.2.3'
 
 gem 'pg'
 gem 'heroku'
-gem 'activeadmin'
+gem "activeadmin", :git => "git://github.com/gregbell/active_admin.git"
 gem "formtastic", "~> 2.1.1"
 
 # Gems used only for assets and not required

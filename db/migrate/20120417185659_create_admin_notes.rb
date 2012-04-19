@@ -1,5 +1,5 @@
 class CreateAdminNotes < ActiveRecord::Migration
-  def self.up
+  def up
     create_table :admin_notes do |t|
       t.string :resource_id, :null => false
       t.string :resource_type, :null => false
@@ -11,7 +11,7 @@ class CreateAdminNotes < ActiveRecord::Migration
     add_index :admin_notes, [:admin_user_type, :admin_user_id]
   end
 
-  def self.down
+  def down
     drop_table :admin_notes
   end
 end

@@ -9,6 +9,7 @@ gem 'pg'
 gem 'heroku'
 gem "activeadmin", :git => "git://github.com/gregbell/active_admin.git"
 gem "formtastic", "~> 2.1.1"
+gem 'cancan'
 
 # Gems used only for assets and not required
 # in production environments by default.
